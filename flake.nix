@@ -3,7 +3,8 @@
   inputs =
     {
       acl2-src = {
-        url = "http://mygit/latest.tar.gz";  # "github:acl2/acl2";
+        url = "github:acl2/acl2";
+        # url = "http://mygit/latest.tar.gz";
         flake = false;
       };
     };
@@ -19,7 +20,7 @@
         pkgs.callPackage ./nixpkgs
           { certifyBooks = true;
             inherit acl2-src;
-            book-set = "basic";
+            book-set = "full";
           };
       nixosModules.x86_64-linux.default = import ./nixos/flake-acl2.nix (self.packages.x86_64-linux.default);
     };
