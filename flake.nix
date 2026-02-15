@@ -3,7 +3,7 @@
   inputs =
     {
       acl2-src = {
-        url = "github:acl2/acl2";
+        url = "http://mygit/latest.tar.gz";  # "github:acl2/acl2";
         flake = false;
       };
     };

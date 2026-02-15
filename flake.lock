@@ -1,0 +1,39 @@
+{
+  "nodes": {
+    "acl2-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771048761,
+        "narHash": "sha256-b7n/D+L9ZuNkDEGb3o1UOlvLg30zkzuaqDsd9jGmXtE=",
+        "type": "tarball",
+        "url": "http://mygit/latest.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "http://mygit/latest.tar.gz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1770843696,
+        "narHash": "sha256-LovWTGDwXhkfCOmbgLVA10bvsi/P8eDDpRudgk68HA8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2343bbb58f99267223bc2aac4fc9ea301a155a16",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "acl2-src": "acl2-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
