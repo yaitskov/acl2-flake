@@ -17,7 +17,7 @@
     {
       packages.x86_64-linux.default =
         pkgs.callPackage ./nixpkgs
-          { certifyBooks = false;
+          { certifyBooks = true;
             inherit acl2-src;
             book-set = "basic";
           };
