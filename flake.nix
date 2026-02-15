@@ -5,7 +5,7 @@
       acl2-src = {
         url = "github:acl2/acl2";
         flake = false;
-      }
+      };
     };
   outputs = { nixpkgs, self, acl2-src }:
     let
