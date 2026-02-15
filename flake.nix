@@ -20,7 +20,7 @@
         pkgs.callPackage ./nixpkgs
           { certifyBooks = true;
             inherit acl2-src;
-            book-set = "full";
+            book-set = "all";
           };
       nixosModules.x86_64-linux.default = import ./nixos/flake-acl2.nix (self.packages.x86_64-linux.default);
     };
