@@ -1,4 +1,4 @@
-* Cached ACL2 with all books certified
+# Cached ACL2 with all books certified
 
 Project is ACL2 flake backed by cachix that contains all books
 certified. This is a shortcut for ACL2 installation on NixOS, a common
@@ -8,9 +8,9 @@ hours.
 
 [cachix tutorial](https://docs.cachix.org/getting-started)
 
-** NixOS with Flakes
+## NixOS with Flakes
 
-*** /etc/nixos/configuration.nix
+### /etc/nixos/configuration.nix
 
 ``` nix
   nix.settings = {
@@ -24,7 +24,7 @@ hours.
 
 ```
 
-*** /etc/nixos/flake.nix
+### /etc/nixos/flake.nix
 ``` nix
   inputs = {
     myacl2.url = "github:yaitskov/acl2-flake";
@@ -50,7 +50,7 @@ hours.
   };
 ```
 
-** Regular Linux
+## Regular Linux
 
 ``` shell
   nix profile install --accept-flake-config nixpkgs#cachix
@@ -62,12 +62,12 @@ hours.
   ./result/bin/acl2
 ```
 
-** Mac
+## Mac
 
 I don't have access to Mac environment and I wasn't able to populate
 cache for this architecture.
 
-*** Updating cachix
+### Updating cachix
 
 ``` shell
 export CPUCORES=15
