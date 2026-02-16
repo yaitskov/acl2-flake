@@ -66,3 +66,11 @@ hours.
 
 I don't have access to Mac environment and I wasn't able to populate
 cache for this architecture.
+
+*** Updating cachix
+
+``` shell
+export CPUCORES=15
+sudo bash -c "mkdir -p /sys/fs/cgroup/b; echo $[$CPUCORES*100000] 100000 > /sys/fs/cgroup/b"
+sudo cgexec -g cpu:b nix build | nix build --no-link --print-out-paths | cachix push acl2-full
+```
