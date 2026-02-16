@@ -5,12 +5,16 @@
       "locked": {
         "lastModified": 1771048761,
         "narHash": "sha256-b7n/D+L9ZuNkDEGb3o1UOlvLg30zkzuaqDsd9jGmXtE=",
-        "type": "tarball",
-        "url": "http://mygit/latest.tar.gz"
+        "owner": "acl2",
+        "repo": "acl2",
+        "rev": "a52827fa0572283d57095bdcbc97ad150a073401",
+        "type": "github"
       },
       "original": {
-        "type": "tarball",
-        "url": "http://mygit/latest.tar.gz"
+        "owner": "acl2",
+        "repo": "acl2",
+        "rev": "a52827fa0572283d57095bdcbc97ad150a073401",
+        "type": "github"
       }
     },
     "nixpkgs": {
